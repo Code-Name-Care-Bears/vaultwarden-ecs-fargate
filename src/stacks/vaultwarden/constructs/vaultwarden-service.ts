@@ -133,8 +133,9 @@ class VaultwardenService extends Construct {
         },
 
         taskSubnets: {
-          subnetType: ec2.SubnetType.PRIVATE_ISOLATED,
+          subnetType: ec2.SubnetType.PUBLIC,
         },
+        assignPublicIp: true,
 
         publicLoadBalancer: true,
 
